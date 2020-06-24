@@ -887,14 +887,51 @@ const Overview = {
 	  <v-carousel-item>
         <v-sheet color="yellow" height="100%" tile>
           <v-row class="fill-height" align="center" justify="center">
-            <div class="display-3">Second</div>
+            <div class="display-3">
+        <v-card
+    tile
+    class="mx-auto"
+    max-width="300"
+    height="230"
+    outlined
+  >
+    <v-img height="230" width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcStKUflaQk6FLbzpvU10y9dH8DHH618c-BsCw&usqp=CAU">
+        <v-row align="end" class="lightbox white--text pa-2 fill-height">
+          <v-col>
+            <div class="display-1 font-weight-thin text-center">Inspiration</div>
+            <div class="body-1 text-center mx-4">Inspires everyone, Eliminating barriers</div>
+          </v-col>
+        </v-row>
+      </v-img>
+  </v-card>
+
+            </div>
           </v-row>
         </v-sheet>
       </v-carousel-item>
 	  <v-carousel-item>
         <v-sheet color="green" height="100%" tile>
           <v-row class="fill-height" align="center" justify="center">
-            <div class="display-3">Third</div>
+            <div class="display-3">
+       <v-card
+    tile
+    class="mx-auto"
+    max-width="300"
+    height="230"
+    outlined
+  >
+    <v-img height="230" width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQtARfglnHDrCvf4Tag3jjUJhh5oMnebee8eQ&usqp=CAU">
+        <v-row align="end" class="lightbox white--text pa-2 fill-height">
+          <v-col>
+            <div class="display-1 font-weight-thin text-center">Diversity & Inclusion</div>
+            <div class="body-1 text-center mx-4">Success is corollary of unique backgrounds</div>
+          </v-col>
+        </v-row>
+      </v-img>
+  </v-card>
+
+
+        </div>
           </v-row>
         </v-sheet>
       </v-carousel-item>
