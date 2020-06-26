@@ -18,7 +18,7 @@ v-for="it in menus" :key="it.title" :to="it.to" @click="">
             <v-icon>{{it.title}}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>{{it.to}}</v-list-item-title>
+            <v-list-item-title>{{it.name}}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 </vlist>
@@ -72,7 +72,21 @@ v-for="it in menus" :key="it.title" :to="it.to" @click="">
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
     </v-app-bar>
-     <v-footer app>{{Date()}}
+     <v-footer app dense>
+
+       <v-layout row>
+      <v-flex xs6 order-lg2>
+        <v-card tile flat color="red lighten-5" height="45">
+          <v-card-text>#1</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs6>
+        <v-card tile flat color="red lighten-5" height="45">
+          <v-btn icon><v-icon>mdi-a</v-icon></v-btn>
+        </v-card>
+      </v-flex>
+    </v-layout>
+
       </v-footer>
 
     
@@ -85,15 +99,18 @@ v-for="it in menus" :key="it.title" :to="it.to" @click="">
       menus: [
         {
           title: "dashboard",
-          to: "/"
+          to: "/",
+          name: "Overview"
         },
         {
           title: "settings",
-          to: "/01"
+          to: "/01",
+          name: "Developer & IT"
         },
         {
           title: "mdi-tennis",
-          to: "/02"
+          to: "/02",
+          name: "Business"
         }
       ],
       drawer: null
@@ -1006,6 +1023,9 @@ const Overview = {
 const Two = {
   template: "<p>This is the second page.</p>"
 };
+const AboutStory = {
+  template: ""
+};
 
 const routes = [
   {
@@ -1019,6 +1039,10 @@ const routes = [
   {
     path: "/02",
     component: CHome
+  },
+  {
+    path: "/aboutstory",
+    component: AboutStory
   }
 ];
 
