@@ -962,11 +962,40 @@ const Overview = {
  
         </v-card>
       </v-flex>
-      <v-flex xs12 sm6 md3 order-md2 order-sm4>
-        <v-card tile flat color="red lighten-5">
+      <v-flex xs6 order-lg2>
+        <v-card tile flat color="red lighten-5" class="text-center">
           <v-card-text>Exa Incorporation ©</v-card-text>
-        
         </v-card>
+      </v-flex>
+      <v-flex xs6>
+        <v-card tile flat color="red lighten-5" height="50">
+          <v-select
+          height="50"
+          :items="['Overview','Story','Vision']"
+          filled
+          dense
+          value="Overview"
+          label="About"
+        ></v-select>
+        </v-card>
+      </v-flex>
+
+    </v-layout>
+   <v-layout row>
+      <v-flex xs4 order-md2 order-xs1>
+        <v-card tile flat color="red lighten-5" class="text-center">
+          <v-card-text>Terms</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs4 order-md3 order-xs2>
+        <v-card tile flat color="red lighten-5" class="text-center">
+          <v-card-text>Privacy</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs4 order-md1 order-xs3>
+        <v-card tile flat color="red lighten-5" class="text-center">
+          <v-card-text>Support</v-card-text>
+         </v-card>
       </v-flex>
     </v-layout>
   </v-container>
