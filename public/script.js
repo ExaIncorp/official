@@ -277,7 +277,7 @@ const Overview = {
             <div class="display-3">
         <v-parallax
     dark
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOtGa59RsTuM4vDXp-DD3g_JTAMduyIWwj9nQdDiE6O6332iHj&usqp=CAU"
+    src="https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
   >
     <v-row height="300" width="100%"
       class="ma-0 pa-0"
@@ -301,7 +301,7 @@ const Overview = {
             <div class="display-3">
        <v-parallax
     dark
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOtGa59RsTuM4vDXp-DD3g_JTAMduyIWwj9nQdDiE6O6332iHj&usqp=CAU"
+    src="https://images.pexels.com/photos/1823734/pexels-photo-1823734.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
   >
     <v-row height="300" width="100%"
       class="ma-0 pa-0"
@@ -325,7 +325,7 @@ const Overview = {
             <div class="display-3">
           <v-parallax
     dark
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOtGa59RsTuM4vDXp-DD3g_JTAMduyIWwj9nQdDiE6O6332iHj&usqp=CAU"
+    src="https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
   >
     <v-row height="300" width="100%"
       class="ma-0 pa-0"
@@ -359,7 +359,7 @@ const Overview = {
             <div class="display-3">
             <v-parallax
     dark
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQy_8fyPgXi_5O4gYLWKL-KPUtz-mwDJCuQ6Q71jZXzSP_d8sgj&usqp=CAU"
+    src="https://cdn.pixabay.com/photo/2013/10/16/22/54/autumn-196566__480.jpg"
   >
     <v-row height="300" width="100%"
       class="ma-0 pa-0"
@@ -383,7 +383,7 @@ const Overview = {
             <div class="display-3">
       <v-parallax
     dark
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQy_8fyPgXi_5O4gYLWKL-KPUtz-mwDJCuQ6Q71jZXzSP_d8sgj&usqp=CAU"
+    src="https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
   >
     <v-row height="300" width="100%"
       class="ma-0 pa-0"
@@ -963,8 +963,9 @@ const Overview = {
         </v-card>
       </v-flex>
       <v-flex xs12 sm6 md3 order-md2 order-sm4>
-        <v-card dark tile flat color="deep-orange darken-3">
-          <v-card-text>#3</v-card-text>
+        <v-card tile flat color="red lighten-5">
+          <v-card-text>Exa Incorporation ©</v-card-text>
+        
         </v-card>
       </v-flex>
     </v-layout>
