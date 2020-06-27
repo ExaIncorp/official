@@ -38,7 +38,7 @@ v-for="it in menus" :key="it.title" :to="it.to" @click="">
       inset
       vertical
     ></v-divider>
-      <v-toolbar-title class="text-center font-weight-bold grey--text text--darken-2" to="/">Exa</v-toolbar-title>
+      <v-toolbar-title class="text-center font-weight-medium grey--text text--darken-2" to="/">Exa</v-toolbar-title>
        <v-spacer></v-spacer>
 
       <v-dialog v-model="dialog" width="600px">
@@ -1018,11 +1018,11 @@ const AboutStory = {
   template: "<p>tested</p>"
 };
 const ExaSearch = {
-   template: `
+  template: `
          <v-container class="ma-0 pa-0">
    <v-layout row class="ma-0 pa-0">
       <v-flex xs12 order-lg2>
-        <v-card tile flat class="ma-4">
+        <v-card tile flat class="mt-4 ml-4 mr-4">
           <v-text-field
             absolute
             dense
@@ -1038,25 +1038,54 @@ const ExaSearch = {
         class="ma-0 pt-4"
         dark
         width="100%"
-        src="https://images.pexels.com/photos/2129796/pexels-photo-2129796.png?auto=compress&cs=tinysrgb&h=1024&w=940"
+        src="https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&h=1280&w=940"
         >
-         <p class="subtitle-1 font-weight-medium">Products</p>
+         <p class="subtitle-1">Products</p>
          <v-layout row>
+      
+        <v-card flat tile class="mx-auto" width="100%" height="80">
+    <v-carousel
+      :show-arrows="false"
+      hide-delimiter-background hide-delimiters delimiter-icon="mdi-minus" height="120">
+      <v-carousel-item>
+        <v-sheet color="blue" height="100%" tile>
+          <v-row class="fill-height" align="center" justify="center">
+            <div class="display-3">
+
+      <v-layout row>
       <v-flex xs4 order-md2 order-xs1>
-        <v-card tile flat color="grey lighten-3">
-          <v-card-text>#1</v-card-text>
+        <v-card tile flat color="red lighten-1" height="120" class="ma-0 pa-0" width="100%">
+    <v-card
+    class="ma-0 pa-0"
+    max-width="344"
+    outlined
+  >
+    <v-img
+      class="white--text align-end"
+      height="130"
+      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+    >
+      <v-card-title class="text-center ml-4 subtitle-1 font-weight-medium">Dew</v-card-title>
+    </v-img>
         </v-card>
       </v-flex>
       <v-flex xs4 order-md3 order-xs2>
-        <v-card dark tile flat color="red lighten-2">
+        <v-card dark tile flat color="red lighten-2" height="120" class="ma-0 pa-0">
           <v-card-text>#2</v-card-text>
         </v-card>
       </v-flex>
       <v-flex xs4 order-md1 order-xs3>
-        <v-card dark tile flat color="red darken-1">
+        <v-card dark tile flat color="red darken-1" height="120">
           <v-card-text>#3</v-card-text>
-        </v-card>
+           </v-card>
       </v-flex>
+    </v-layout>
+          
+           </div>
+          </v-row>
+        </v-sheet>
+      </v-carousel-item>
+     </v-card>
     </v-layout>
   </v-parallax>
 
@@ -1082,7 +1111,7 @@ const routes = [
     path: "/about-story",
     component: AboutStory
   },
-  { 
+  {
     path: "/exa-search",
     component: ExaSearch
   }
