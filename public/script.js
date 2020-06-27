@@ -38,7 +38,7 @@ v-for="it in menus" :key="it.title" :to="it.to" @click="">
       inset
       vertical
     ></v-divider>
-      <v-toolbar-title>Exa Incorporation</v-toolbar-title>
+      <v-toolbar-title class="text-center font-weight-bold grey--text text--darken-2" to="/">Exa</v-toolbar-title>
        <v-spacer></v-spacer>
 
       <v-dialog v-model="dialog" width="600px">
@@ -67,25 +67,14 @@ v-for="it in menus" :key="it.title" :to="it.to" @click="">
         </v-card-actions>
       </v-card>
     </v-dialog>
-
-      <v-btn icon>
+     <v-btn icon>
+     <v-icon>mdi-account-circle</v-icon>
+     </v-btn>
+      <v-btn icon to="/exa-search">
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
     </v-app-bar>
      <v-footer app dense>
-
-       <v-layout row>
-      <v-flex xs6 order-lg2>
-        <v-card tile flat color="red lighten-5" height="45">
-          <v-card-text>#1</v-card-text>
-        </v-card>
-      </v-flex>
-      <v-flex xs6>
-        <v-card tile flat color="red lighten-5" height="45">
-          <v-btn icon><v-icon>mdi-a</v-icon></v-btn>
-        </v-card>
-      </v-flex>
-    </v-layout>
 
       </v-footer>
 
@@ -989,7 +978,9 @@ const Overview = {
           <v-select
           height="50"
           :items="['Overview','Story','Vision']"
+          :to="['/aboutstory','/aboutstory','/aboutstory']"
           filled
+          @click=""
           dense
           value="Overview"
           label="About"
@@ -1024,7 +1015,54 @@ const Two = {
   template: "<p>This is the second page.</p>"
 };
 const AboutStory = {
-  template: ""
+  template: "<p>tested</p>"
+};
+const ExaSearch = {
+   template: `
+         <v-container class="ma-0 pa-0">
+   <v-layout row class="ma-0 pa-0">
+      <v-flex xs12 order-lg2>
+        <v-card tile flat class="ma-4">
+          <v-text-field
+            absolute
+            dense
+            label="Search"
+            placeholder="Search Exa"
+            outlined
+            tile
+            append-icon="mdi-magnify"
+          ></v-text-field>
+ </v-card></v-flex>
+</v-layout>
+      <v-parallax
+        class="ma-0 pt-4"
+        dark
+        width="100%"
+        src="https://images.pexels.com/photos/2129796/pexels-photo-2129796.png?auto=compress&cs=tinysrgb&h=1024&w=940"
+        >
+         <p class="subtitle-1 font-weight-medium">Products</p>
+         <v-layout row>
+      <v-flex xs4 order-md2 order-xs1>
+        <v-card tile flat color="grey lighten-3">
+          <v-card-text>#1</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs4 order-md3 order-xs2>
+        <v-card dark tile flat color="red lighten-2">
+          <v-card-text>#2</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs4 order-md1 order-xs3>
+        <v-card dark tile flat color="red darken-1">
+          <v-card-text>#3</v-card-text>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </v-parallax>
+
+
+         </v-container>
+           `
 };
 
 const routes = [
@@ -1041,8 +1079,12 @@ const routes = [
     component: CHome
   },
   {
-    path: "/aboutstory",
+    path: "/about-story",
     component: AboutStory
+  },
+  { 
+    path: "/exa-search",
+    component: ExaSearch
   }
 ];
 
