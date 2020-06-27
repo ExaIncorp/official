@@ -74,9 +74,7 @@ v-for="it in menus" :key="it.title" :to="it.to" @click="">
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
     </v-app-bar>
-     <v-footer app dense>
-
-      </v-footer>
+     
 
     
 </div>
@@ -1024,7 +1022,7 @@ const ExaSearch = {
       <v-flex xs12 order-lg2>
         <v-card tile flat class="mt-4 ml-4 mr-4">
           <v-text-field
-            absolute
+            fixed
             dense
             label="Search"
             placeholder="Search Exa"
