@@ -1034,10 +1034,47 @@ const docs = {
  <v-parallax
         class="ma-0 pa-0"
         dark
-        height="788"
+        height="468"
         width="100%"
-        src="https://images.pexels.com/photos/775199/pexels-photo-775199.jpeg?auto=compress&cs=tinysrgb&h=1024&w=940"
+        src="https://images.pexels.com/photos/1535162/pexels-photo-1535162.jpeg?auto=compress&cs=tinysrgb&h=1280&w=940"
         >
+  <v-container>
+    <v-layout row>
+      <v-flex xs4 order-md2 order-xs1>
+        <v-card dark tile flat color="red lighten-1">
+          <v-card-text>#1</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs4 order-md3 order-xs2>
+        <v-card dark tile flat color="red lighten-2">
+          <v-card-text>#2</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs4 order-md1 order-xs3>
+        <v-card dark tile flat color="red darken-1">
+          <v-card-text>#3</v-card-text>
+    </v-card>
+      </v-flex>
+    </v-layout>
+   <v-layout row>
+      <v-flex xs4 order-md2 order-xs1>
+        <v-card dark tile flat color="red lighten-1">
+          <v-card-text>#1</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs4 order-md3 order-xs2>
+        <v-card dark tile flat color="red lighten-2">
+          <v-card-text>#2</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs4 order-md1 order-xs3>
+        <v-card dark tile flat color="red darken-1">
+          <v-card-text>#3</v-card-text>
+      </v-card>
+      </v-flex>
+    </v-layout>
+
+  </v-container>
 </v-parallax>
 </v-container>
 
