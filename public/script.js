@@ -580,6 +580,7 @@ const Overview = {
     <v-card-subtitle class="pb-0">Grow & Organise your Business</v-card-subtitle>
     <v-card-actions>
       <v-btn
+        tile
         outlined
         color="white"
         text
@@ -710,6 +711,7 @@ const Overview = {
     <v-card-actions>
       <v-btn
         outlined
+        tile
         color="white"
         text
       >
@@ -841,6 +843,7 @@ const Overview = {
         outlined
         color="white"
         text
+        tile
       >
         Get Started
       </v-btn>
@@ -1113,8 +1116,8 @@ const ExaSearch = {
     <v-list-item three-line>
       <v-list-item-content>
         <div class="overline mb-4">Setup</div>
-        <v-list-item-title class="headline mb-1">Setup & Learn</v-list-item-title>
-        <v-list-item-subtitle>Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle>
+        <v-list-item-title class="headline mb-1">Documentations</v-list-item-title>
+        <v-list-item-subtitle>See Our Docs about Usage of our Products effectively</v-list-item-subtitle>
       </v-list-item-content>
 
       <v-list-item-avatar
@@ -1125,8 +1128,8 @@ const ExaSearch = {
     </v-list-item>
 
     <v-card-actions>
-      <v-btn text>Button</v-btn>
-      <v-btn text>Button</v-btn>
+      <v-btn text tile>Explore</v-btn>
+      <v-btn text tile>Choose</v-btn>
     </v-card-actions>
   
 
