@@ -1044,7 +1044,7 @@ const ExaSearch = {
         <v-card flat tile class="mx-auto" width="100%" height="80">
     <v-carousel
       :show-arrows="false"
-      hide-delimiter-background hide-delimiters delimiter-icon="mdi-minus" height="120">
+      hide-delimiter-background hide-delimiters delimiter-icon="mdi-minus" height="140">
       <v-carousel-item>
         <v-sheet color="blue" height="100%" tile>
           <v-row class="fill-height" align="center" justify="center">
@@ -1052,28 +1052,30 @@ const ExaSearch = {
 
       <v-layout row>
       <v-flex xs4 order-md2 order-xs1>
-        <v-card tile flat color="red lighten-1" height="120" class="ma-0 pa-0" width="100%">
+        <v-card tile flat color="red lighten-1" height="140" class="ma-0 pa-0" width="100%">
     <v-card
-    class="ma-0 pa-0"
+    color="grey lighten-3"
+    class="ma-0 pa-0 text-center"
+    align="center"
     max-width="344"
     outlined
   >
     <v-img
       class="white--text align-end"
-      height="130"
+      height="110"
       src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
     >
-      <v-card-title class="text-center ml-4 subtitle-1 font-weight-medium">Dew</v-card-title>
     </v-img>
+     <v-card-title class="ma-0 pa-0 subtitle-1 font-weight-medium text-center grey--text text--darken-7">Dew</v-card-title>
         </v-card>
       </v-flex>
       <v-flex xs4 order-md3 order-xs2>
-        <v-card dark tile flat color="red lighten-2" height="120" class="ma-0 pa-0">
+        <v-card dark tile flat color="red lighten-2" height="140" class="ma-0 pa-0">
           <v-card-text>#2</v-card-text>
         </v-card>
       </v-flex>
       <v-flex xs4 order-md1 order-xs3>
-        <v-card dark tile flat color="red darken-1" height="120">
+        <v-card dark tile flat color="red darken-1" height="140">
           <v-card-text>#3</v-card-text>
            </v-card>
       </v-flex>
