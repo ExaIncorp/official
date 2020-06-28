@@ -42,15 +42,15 @@ v-for="it in menus" :key="it.title" :to="it.to" @click="">
       <v-toolbar-title class="text-center font-weight-medium grey--text text--darken-2" to="/">Exa</v-toolbar-title>
        <v-spacer></v-spacer>
 
-      <v-dialog v-model="dialog" width="600px">
-      <template v-slot:activator="{ on, attrs }">
+      <v-dialog v-model="dialog" width="600px" tile>
+      <template v-slot:activator="{ on, attrs }" tile>
        
       <v-btn icon v-on="on">
         <v-icon>mdi-apps</v-icon>
       </v-btn>
 
       </template>
-      <v-card>
+      <v-card tile>
 
         <v-tabs>
         <v-tab>Use Anywhere</v-tab>
@@ -62,12 +62,13 @@ v-for="it in menus" :key="it.title" :to="it.to" @click="">
         <v-spacer></v-spacer><v-card-actions>
     
           <v-card-text class="text-center">
-      <v-btn text>Learn More</v-btn>
+      <v-btn text tile>Learn More</v-btn>
     </v-card-text>
       </v-card>
         </v-card-actions>
       </v-card>
     </v-dialog>
+
      <v-btn icon>
      <v-icon>mdi-account-circle</v-icon>
      </v-btn>
@@ -1014,7 +1015,33 @@ const Overview = {
      `
 };
 const docs = {
-  template: "<p> docs</p>"
+  template: `
+             <v-container class="ma-0 pa-0" fluid>
+   <v-layout row class="ma-0 pa-0">
+      <v-flex xs12 order-lg2>
+        <v-card tile flat class="mt-4 ml-4 mr-4">
+          <v-text-field
+            fixed
+            dense
+            label="Documentation"
+            placeholder="Search Products"
+            outlined
+            tile
+            append-icon="mdi-magnify"
+          ></v-text-field>
+ </v-card></v-flex>
+</v-layout>
+ <v-parallax
+        class="ma-0 pa-0"
+        dark
+        height="788"
+        width="100%"
+        src="https://images.pexels.com/photos/775199/pexels-photo-775199.jpeg?auto=compress&cs=tinysrgb&h=1024&w=940"
+        >
+</v-parallax>
+</v-container>
+
+            `
 };
 const Two = {
   template: "<p>This is the second page.</p>"
@@ -1132,7 +1159,7 @@ const ExaSearch = {
     </v-list-item>
 
     <v-card-actions>
-      <v-btn text tile>Explore</v-btn>
+      <v-btn text tile to="/docs">Explore</v-btn>
       <v-btn text tile>Choose</v-btn>
     </v-card-actions>
   
