@@ -1041,8 +1041,8 @@ const ExaSearch = {
         >
 
          
-  <v-container class="mt-n16">
-    <v-layout row class="mt-n12">
+  <v-container class="mt-16">
+    <v-layout row class="">
       <v-flex xs6 order-lg2>
         <v-card dark tile flat color="teal darken-3" height="160">
           <v-card-text>#1</v-card-text>
@@ -1066,11 +1066,51 @@ const ExaSearch = {
         </v-card>
       </v-flex>
       <v-flex xs4 order-md1 order-xs3>
-        <v-card dark tile flat color="red darken-1" height="110">
-          <v-card-text>#3</v-card-text>
+        <v-card dark tile flat color="red darken-1" height="110" align="center" justify="center">
+       <v-btn dark icon class="pt-8 pb-3">
+        <v-icon x-large>mdi-magnify</v-icon>
+       </v-btn>
+       <v-card-text class="overline">Explore </v-card-text>
+
+
         </v-card>
       </v-flex>
-    </v-layout>
+    </v-layout> <br/>
+   
+      <v-layout row wrap>
+      <v-flex xs12 sm6 md3 order-md4 order-sm2>
+        <v-card dark tile flat color="red darken-2">
+          
+         
+    <v-list-item three-line>
+      <v-list-item-content>
+        <div class="overline mb-4">OVERLINE</div>
+        <v-list-item-title class="headline mb-1">Headline 5</v-list-item-title>
+        <v-list-item-subtitle>Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle>
+      </v-list-item-content>
+
+      <v-list-item-avatar
+        tile
+        size="80"
+        color="grey"
+      ></v-list-item-avatar>
+    </v-list-item>
+
+    <v-card-actions>
+      <v-btn text>Button</v-btn>
+      <v-btn text>Button</v-btn>
+    </v-card-actions>
+  
+
+
+        </v-card>
+      </v-flex>
+      <v-flex xs12 sm6 md3 order-md3 order-sm1>
+        <v-card dark tile flat color="deep-orange lighten-1">
+          <v-card-text>#2</v-card-text>
+        </v-card>
+      </v-flex>
+     </v-layout>
     
   </v-container>
   </v-parallax>
