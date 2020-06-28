@@ -27,6 +27,7 @@ v-for="it in menus" :key="it.title" :to="it.to" @click="">
     </v-navigation-drawer>
 
     <v-app-bar
+      
       color="white"
       flat
       app
@@ -1012,6 +1013,9 @@ const Overview = {
    </v-container>
      `
 };
+const docs = {
+  template: "<p> docs</p>"
+};
 const Two = {
   template: "<p>This is the second page.</p>"
 };
@@ -1039,7 +1043,7 @@ const ExaSearch = {
       <v-parallax
         class="ma-0 pa-0"
         dark
-        height="768"
+        height="788"
         width="100%"
         src="https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&h=1280&w=940"
         >
@@ -1139,8 +1143,49 @@ const ExaSearch = {
       </v-flex>
      </v-layout>
     
+    
   </v-container>
   </v-parallax>
+
+<v-layout row>
+<v-flex xs6 order-lg2>
+        <v-card tile flat color="red lighten-5" class="text-center">
+          <v-card-text>Exa Incorporation ©</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs6>
+        <v-card tile flat color="red lighten-5" height="50">
+          <v-select
+          height="50"
+          :items="['Search','Support','FAQS']"
+          :to="['/aboutstory','/aboutstory','/aboutstory']"
+          filled
+          @click=""
+          dense
+          value="Search"
+          label="Go to"
+        ></v-select>
+        </v-card>
+      </v-flex>
+
+    </v-layout>
+   <v-layout row>
+      <v-flex xs4 order-md2 order-xs1>
+        <v-card tile flat color="red lighten-5" class="text-center">
+          <v-card-text>Terms</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs4 order-md3 order-xs2>
+        <v-card tile flat color="red lighten-5" class="text-center">
+          <v-card-text>Privacy</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs4 order-md1 order-xs3>
+        <v-card tile flat color="red lighten-5" class="text-center">
+          <v-card-text>Support</v-card-text>
+         </v-card>
+      </v-flex>
+    </v-layout>
   </v-container>
            `
 };
@@ -1165,6 +1210,10 @@ const routes = [
   {
     path: "/exa-search",
     component: ExaSearch
+  },
+  {
+    path: "/docs",
+    component: docs
   }
 ];
 
