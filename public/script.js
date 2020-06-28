@@ -1017,7 +1017,7 @@ const AboutStory = {
 };
 const ExaSearch = {
   template: `
-         <v-container class="ma-0 pa-0">
+         <v-container class="ma-0 pa-0" fluid>
    <v-layout row class="ma-0 pa-0">
       <v-flex xs12 order-lg2>
         <v-card tile flat class="mt-4 ml-4 mr-4">
@@ -1032,65 +1032,49 @@ const ExaSearch = {
           ></v-text-field>
  </v-card></v-flex>
 </v-layout>
+
       <v-parallax
-        class="ma-0 pt-4"
+        class="ma-0 pa-0"
         dark
         width="100%"
         src="https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&h=1280&w=940"
         >
-         <p class="subtitle-1">Products</p>
-         <v-layout row>
-      
-        <v-card flat tile class="mx-auto" width="100%" height="80">
-    <v-carousel
-      :show-arrows="false"
-      hide-delimiter-background hide-delimiters delimiter-icon="mdi-minus" height="140">
-      <v-carousel-item>
-        <v-sheet color="blue" height="100%" tile>
-          <v-row class="fill-height" align="center" justify="center">
-            <div class="display-3">
 
-      <v-layout row>
+         
+  <v-container class="mt-n16">
+    <v-layout row class="mt-n12">
+      <v-flex xs6 order-lg2>
+        <v-card dark tile flat color="teal darken-3" height="160">
+          <v-card-text>#1</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs6>
+        <v-card dark tile flat color="red darken-4" height="160">
+          <v-card-text>#2</v-card-text>
+        </v-card>
+      </v-flex>
+    </v-layout>
+    <v-layout row>
       <v-flex xs4 order-md2 order-xs1>
-        <v-card tile flat color="red lighten-1" height="140" class="ma-0 pa-0" width="100%">
-    <v-card
-    color="grey lighten-3"
-    class="ma-0 pa-0 text-center"
-    align="center"
-    max-width="344"
-    outlined
-  >
-    <v-img
-      class="white--text align-end"
-      height="110"
-      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-    >
-    </v-img>
-     <v-card-title class="ma-0 pa-0 subtitle-1 font-weight-medium text-center grey--text text--darken-7">Dew</v-card-title>
+        <v-card dark tile flat color="red lighten-1" height="110">
+          <v-card-text>#1</v-card-text>
         </v-card>
       </v-flex>
       <v-flex xs4 order-md3 order-xs2>
-        <v-card dark tile flat color="red lighten-2" height="140" class="ma-0 pa-0">
+        <v-card dark tile flat color="cyan darken-3" height="110">
           <v-card-text>#2</v-card-text>
         </v-card>
       </v-flex>
       <v-flex xs4 order-md1 order-xs3>
-        <v-card dark tile flat color="red darken-1" height="140">
+        <v-card dark tile flat color="red darken-1" height="110">
           <v-card-text>#3</v-card-text>
-           </v-card>
+        </v-card>
       </v-flex>
     </v-layout>
-          
-           </div>
-          </v-row>
-        </v-sheet>
-      </v-carousel-item>
-     </v-card>
-    </v-layout>
+    
+  </v-container>
   </v-parallax>
-
-
-         </v-container>
+  </v-container>
            `
 };
 
