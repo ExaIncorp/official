@@ -1036,12 +1036,13 @@ const ExaSearch = {
       <v-parallax
         class="ma-0 pa-0"
         dark
+        height="768"
         width="100%"
         src="https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&h=1280&w=940"
         >
 
          
-  <v-container class="mt-16">
+  <v-container class="mt-0">
     <v-layout row class="">
       <v-flex xs6 order-lg2>
         <v-card dark tile flat color="teal darken-3" height="160">
@@ -1084,8 +1085,35 @@ const ExaSearch = {
          
     <v-list-item three-line>
       <v-list-item-content>
-        <div class="overline mb-4">OVERLINE</div>
-        <v-list-item-title class="headline mb-1">Headline 5</v-list-item-title>
+        <div class="overline mb-4">SUPPORT</div>
+        <v-list-item-title class="headline mb-1">Need Help</v-list-item-title>
+        <v-list-item-subtitle>Visit Exa Support to Get Help related to our Products</v-list-item-subtitle>
+      </v-list-item-content>
+
+      <v-list-item-avatar
+        tile
+        size="80"
+        color="grey"
+      ></v-list-item-avatar>
+    </v-list-item>
+
+    <v-card-actions>
+      <v-btn text tile> Support</v-btn>
+      <v-btn text tile>FAQS</v-btn>
+    </v-card-actions>
+  
+
+
+        </v-card>
+      </v-flex> </v-layout> <br/>
+      <v-layout row wrap>
+      <v-flex xs12 sm6 md3 order-md3 order-sm1>
+        <v-card dark tile flat color="deep-orange lighten-1">
+          
+    <v-list-item three-line>
+      <v-list-item-content>
+        <div class="overline mb-4">Setup</div>
+        <v-list-item-title class="headline mb-1">Setup & Learn</v-list-item-title>
         <v-list-item-subtitle>Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle>
       </v-list-item-content>
 
@@ -1103,11 +1131,7 @@ const ExaSearch = {
   
 
 
-        </v-card>
-      </v-flex>
-      <v-flex xs12 sm6 md3 order-md3 order-sm1>
-        <v-card dark tile flat color="deep-orange lighten-1">
-          <v-card-text>#2</v-card-text>
+     
         </v-card>
       </v-flex>
      </v-layout>
