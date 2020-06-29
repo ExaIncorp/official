@@ -1038,48 +1038,66 @@ const docs = {
         width="100%"
         src="https://images.pexels.com/photos/1535162/pexels-photo-1535162.jpeg?auto=compress&cs=tinysrgb&h=1280&w=940"
         >
-  <v-container>
+  <v-container class="mt-n12">
     <v-layout row>
-      <v-flex xs4 order-md2 order-xs1>
-        <v-card dark tile flat color="red lighten-1">
+      <v-flex xs12 order-md2 order-xs1>
+        <v-card dark tile flat color="white" height="256">
           <v-card-text>#1</v-card-text>
-        </v-card>
-      </v-flex>
-      <v-flex xs4 order-md3 order-xs2>
-        <v-card dark tile flat color="red lighten-2">
-          <v-card-text>#2</v-card-text>
-        </v-card>
-      </v-flex>
-      <v-flex xs4 order-md1 order-xs3>
-        <v-card dark tile flat color="red darken-1">
-          <v-card-text>#3</v-card-text>
-    </v-card>
-      </v-flex>
-    </v-layout>
-   <v-layout row>
-      <v-flex xs4 order-md2 order-xs1>
-        <v-card dark tile flat color="red lighten-1">
-          <v-card-text>#1</v-card-text>
-        </v-card>
-      </v-flex>
-      <v-flex xs4 order-md3 order-xs2>
-        <v-card dark tile flat color="red lighten-2">
-          <v-card-text>#2</v-card-text>
-        </v-card>
-      </v-flex>
-      <v-flex xs4 order-md1 order-xs3>
-        <v-card dark tile flat color="red darken-1">
-          <v-card-text>#3</v-card-text>
+        
+       
       </v-card>
       </v-flex>
     </v-layout>
 
   </v-container>
 </v-parallax>
+<v-layout row>
+<v-flex xs6 order-lg2>
+        <v-card tile flat color="red lighten-5" class="text-center">
+          <v-card-text>Exa Incorporation ©</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs6>
+        <v-card tile flat color="red lighten-5" height="50">
+          <v-select
+          height="50"
+          :items="['Docs','Support','FAQS']"
+          :to="['/aboutstory','/aboutstory','/aboutstory']"
+          filled
+          @click=""
+          dense
+          value="Docs"
+          label="Go to"
+        ></v-select>
+        </v-card>
+      </v-flex>
+    </v-layout>
+   <v-layout row>
+      <v-flex xs4 order-md2 order-xs1>
+        <v-card tile flat color="red lighten-5" class="text-center">
+          <v-card-text>Terms</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs4 order-md3 order-xs2>
+        <v-card tile flat color="red lighten-5" class="text-center">
+          <v-card-text>Privacy</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs4 order-md1 order-xs3>
+        <v-card tile flat color="red lighten-5" class="text-center">
+          <v-card-text>Support</v-card-text>
+         </v-card>
+      </v-flex>
+    </v-layout>
+
+
 </v-container>
 
             `
 };
+const products = {
+  template: "<p>products</p>"
+}
 const Two = {
   template: "<p>This is the second page.</p>"
 };
@@ -1107,7 +1125,7 @@ const ExaSearch = {
       <v-parallax
         class="ma-0 pa-0"
         dark
-        height="788"
+        height="968"
         width="100%"
         src="https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&h=1280&w=940"
         >
@@ -1116,29 +1134,29 @@ const ExaSearch = {
   <v-container class="mt-0">
     <v-layout row class="">
       <v-flex xs6 order-lg2>
-        <v-card dark tile flat color="teal darken-3" height="160">
+        <v-card dark tile flat color="white" height="160">
           <v-card-text>#1</v-card-text>
         </v-card>
       </v-flex>
       <v-flex xs6>
-        <v-card dark tile flat color="red darken-4" height="160">
+        <v-card dark tile flat color="white" height="160">
           <v-card-text>#2</v-card-text>
         </v-card>
       </v-flex>
     </v-layout>
     <v-layout row>
       <v-flex xs4 order-md2 order-xs1>
-        <v-card dark tile flat color="red lighten-1" height="110">
+        <v-card dark tile flat color="white" height="110">
           <v-card-text>#1</v-card-text>
         </v-card>
       </v-flex>
       <v-flex xs4 order-md3 order-xs2>
-        <v-card dark tile flat color="cyan darken-3" height="110">
+        <v-card dark tile flat color="white" height="110">
           <v-card-text>#2</v-card-text>
         </v-card>
       </v-flex>
       <v-flex xs4 order-md1 order-xs3>
-        <v-card dark tile flat color="red darken-1" height="110" align="center" justify="center">
+        <v-card dark tile flat color="red darken-3" height="110" align="center" justify="center">
        <v-btn dark icon class="pt-8 pb-3">
         <v-icon x-large>mdi-magnify</v-icon>
        </v-btn>
@@ -1149,6 +1167,30 @@ const ExaSearch = {
       </v-flex>
     </v-layout> <br/>
    
+   <v-expansion-panels tile class="ma-0 pa-0" absolute flat>
+    <v-expansion-panel tile class="ma-0 pa-0"
+    >
+      <v-expansion-panel-header>For All</v-expansion-panel-header>
+      <v-expansion-panel-content>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+     <v-expansion-panel tile
+    >
+      <v-expansion-panel-header>For Business</v-expansion-panel-header>
+      <v-expansion-panel-content>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+    <v-expansion-panel tile
+    >
+      <v-expansion-panel-header>For Developers</v-expansion-panel-header>
+      <v-expansion-panel-content>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+  </v-expansion-panels>
+    <br/>
       <v-layout row wrap>
       <v-flex xs12 sm6 md3 order-md4 order-sm2>
         <v-card dark tile flat color="red darken-2">
@@ -1197,7 +1239,7 @@ const ExaSearch = {
 
     <v-card-actions>
       <v-btn text tile to="/docs">Explore</v-btn>
-      <v-btn text tile>Choose</v-btn>
+      <v-btn text tile to="/products">Choose</v-btn>
     </v-card-actions>
   
 
@@ -1278,6 +1320,10 @@ const routes = [
   {
     path: "/docs",
     component: docs
+  },
+  {
+    path: "/products",
+    component: products
   }
 ];
 
