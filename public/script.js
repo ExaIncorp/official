@@ -1036,17 +1036,33 @@ const docs = {
         dark
         height="468"
         width="100%"
-        src="https://images.pexels.com/photos/1535162/pexels-photo-1535162.jpeg?auto=compress&cs=tinysrgb&h=1280&w=940"
+        src="https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&h=1280&w=940"
         >
   <v-container class="mt-n12">
     <v-layout row>
-      <v-flex xs12 order-md2 order-xs1>
-        <v-card dark tile flat color="white" height="256">
+      <v-flex xs12>
+        <v-card light tile flat color="white" height="256">
           <v-card-text>#1</v-card-text>
         
        
       </v-card>
       </v-flex>
+   <v-expansion-panels tile class="ma-0 pa-0" absolute flat>
+    <v-expansion-panel tile class="ma-0 pa-0"
+    >
+      <v-expansion-panel-header>For Business</v-expansion-panel-header>
+      <v-expansion-panel-content>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+     <v-expansion-panel tile
+    >
+      <v-expansion-panel-header>For Developers</v-expansion-panel-header>
+      <v-expansion-panel-content>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+  </v-expansion-panels>
     </v-layout>
 
   </v-container>
@@ -1095,7 +1111,7 @@ const docs = {
 
             `
 };
-const products = {
+const support = {
   template: "<p>products</p>"
 }
 const Two = {
@@ -1156,10 +1172,10 @@ const ExaSearch = {
         </v-card>
       </v-flex>
       <v-flex xs4 order-md1 order-xs3>
-        <v-card dark tile flat color="red darken-3" height="110" align="center" justify="center">
-       <v-btn dark icon class="pt-8 pb-3">
-        <v-icon x-large>mdi-magnify</v-icon>
-       </v-btn>
+        <v-card dark tile flat color="red darken-3" height="110" align="center" justify="center" v-ripple>
+        <v-btn icon class="pt-8 pb-3" dark>
+        <v-icon x-large color="white">mdi-magnify</v-icon>
+         </v-btn>
        <v-card-text class="overline">Explore </v-card-text>
 
 
@@ -1239,7 +1255,6 @@ const ExaSearch = {
 
     <v-card-actions>
       <v-btn text tile to="/docs">Explore</v-btn>
-      <v-btn text tile to="/products">Choose</v-btn>
     </v-card-actions>
   
 
@@ -1322,8 +1337,8 @@ const routes = [
     component: docs
   },
   {
-    path: "/products",
-    component: products
+    path: "/support",
+    component: support
   }
 ];
 
