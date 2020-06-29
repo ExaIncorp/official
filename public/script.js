@@ -1112,8 +1112,82 @@ const docs = {
             `
 };
 const support = {
-  template: "<p>products</p>"
-}
+  template: `
+         <v-container class="ma-0 pa-0" fluid>
+   <v-layout row class="ma-0 pa-0">
+      <v-flex xs12 order-lg2>
+        <v-card tile flat class="mt-4 ml-4 mr-4">
+          <v-text-field
+            fixed
+            dense
+            label="Support"
+            placeholder="How Can We Help You"
+            outlined
+            tile
+            append-icon="mdi-magnify"
+          ></v-text-field>
+ </v-card></v-flex>
+</v-layout>
+<v-parallax
+        class="ma-0 pa-0"
+        dark
+        height="968"
+        width="100%"
+        src="https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&h=1280&w=940"
+        >
+         
+  <v-container class="mt-0">
+    <v-layout row class="">
+      <v-flex xs6 order-lg2>
+        <v-card dark tile flat color="white" height="160">
+          <v-card-text>#1</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs6>
+        <v-card dark tile flat color="white" height="160">
+          <v-card-text>#2</v-card-text>
+        </v-card>
+      </v-flex>
+    </v-layout>
+    <v-layout row>
+      <v-flex xs4 order-md2 order-xs1>
+        <v-card dark tile flat color="white" height="110">
+          <v-card-text>#1</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs4 order-md3 order-xs2>
+        <v-card dark tile flat color="white" height="110">
+          <v-card-text>#2</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs4 order-md1 order-xs3>
+        <v-card dark tile flat color="red darken-3" height="110" align="center" justify="center" v-ripple>
+        <v-btn icon class="pt-8 pb-3" dark>
+        <v-icon x-large color="white">mdi-magnify</v-icon>
+         </v-btn>
+       <v-card-text class="overline">More </v-card-text>
+        </v-card>
+      </v-flex>
+    </v-layout> <br/>
+ <v-layout row class="">
+      <v-flex xs12 order-lg2>
+        <v-card tile flat color="white" height="360">
+          <v-list-item three-line>
+      <v-list-item-content>
+        <div class="overline mb-4">DOCS</div>
+        <v-list-item-title class="headline mb-1">Trending Topics</v-list-item-title>
+        <v-list-item class="mt-3 ml-2 subtitle-1 font-weight-medium">Setup & Install</v-list-item>
+      </v-list-item-content>
+      </v-list-item>
+
+        </v-card>
+      </v-flex>
+</v-layout>
+</v-container>
+</v-parallax>
+</v-container>
+`
+};
 const Two = {
   template: "<p>This is the second page.</p>"
 };
